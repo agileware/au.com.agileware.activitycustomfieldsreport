@@ -21,48 +21,12 @@ function activitycustomfieldsreport_civicrm_install() {
 }
 
 /**
- * Implements hook_civicrm_postInstall().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_postInstall
- */
-function activitycustomfieldsreport_civicrm_postInstall() {
-  _activitycustomfieldsreport_civix_civicrm_postInstall();
-}
-
-/**
- * Implements hook_civicrm_uninstall().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_uninstall
- */
-function activitycustomfieldsreport_civicrm_uninstall() {
-  _activitycustomfieldsreport_civix_civicrm_uninstall();
-}
-
-/**
  * Implements hook_civicrm_enable().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_enable
  */
 function activitycustomfieldsreport_civicrm_enable() {
   _activitycustomfieldsreport_civix_civicrm_enable();
-}
-
-/**
- * Implements hook_civicrm_disable().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_disable
- */
-function activitycustomfieldsreport_civicrm_disable() {
-  _activitycustomfieldsreport_civix_civicrm_disable();
-}
-
-/**
- * Implements hook_civicrm_upgrade().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_upgrade
- */
-function activitycustomfieldsreport_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _activitycustomfieldsreport_civix_civicrm_upgrade($op, $queue);
 }
 
 // --- Functions below this ship commented out. Uncomment as required. ---
@@ -91,12 +55,3 @@ function activitycustomfieldsreport_civicrm_navigationMenu(&$menu) {
   ));
   _activitycustomfieldsreport_civix_navigationMenu($menu);
 } // */
-
-/**
- * Implements hook_civicrm_entityTypes().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
- */
-function activitycustomfieldsreport_civicrm_entityTypes(&$entityTypes) {
-  _activitycustomfieldsreport_civix_civicrm_entityTypes($entityTypes);
-}
